@@ -237,8 +237,8 @@ def valid(model, test_loader, loss_function, best_test_acc=0.0, save_best_model=
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, truncation=True, do_lower_case=True)
 
 # Load Train/Test data
-train_data = pd.read_csv("./data_n_model/train_jp_v1.csv")
-test_data = pd.read_csv("./data_n_model/test_jp_v1.csv")
+train_data = pd.read_csv("train.csv")
+test_data = pd.read_csv("test.csv")
 
 print("TRAIN Dataset: {}".format(train_data.shape))
 print("TEST Dataset: {}".format(test_data.shape))
